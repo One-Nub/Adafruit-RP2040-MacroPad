@@ -96,7 +96,10 @@ class MacroApp:
         self.current_layer = self.layers[layer_index]
         layer: Layer = self.current_layer
 
-        self.text_lines[0].text = f"{layer.name[:20] : ^20}"
+        text = f"{layer.name[:20] : ^20}"
+        if self.switch_layer_state:
+            text += "*"
+        self.text_lines[0].text = text
 
         key_labels = dict()
         for i in range(12):
