@@ -88,7 +88,7 @@ media_layer = [
 
 
 utils_layer = [
-    MacroKey(1, "", color=0),
+    MacroKey(1, "ESC", action=lambda mp: send_key(mp, Keycode.ESCAPE), color=0),
     MacroKey(2, "", color=0),
     MacroKey(3, "", color=0),
     #
