@@ -42,7 +42,7 @@ keypad_layer = [
     MacroKey(9, "KP 3", action=lambda mp: send_key(mp, Keycode.KEYPAD_THREE)),
     #
     MacroKey(10, "DELETE", action=lambda mp: send_key(mp, Keycode.BACKSPACE), color=RED),
-    MacroKey(11, "KP 0", action=lambda mp: send_key(mp, Keycode.KEYPAD_NINE)),
+    MacroKey(11, "KP 0", action=lambda mp: send_key(mp, Keycode.KEYPAD_ZERO)),
     MacroKey(12, "ENTER", action=lambda mp: send_key(mp, Keycode.KEYPAD_ENTER), color=GREEN),
 ]
 
